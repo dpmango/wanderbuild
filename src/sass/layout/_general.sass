@@ -4,8 +4,9 @@
   -webkit-overflow-scrolling: touch
 
 body
-  font-family: $fontLight
+  font-family: $fontReg
   position: relative
+  color: $mainColor
   &>svg
     display: none
   
@@ -15,9 +16,9 @@ body
 
 .container
   width: 100%
-  max-width: 1510px
-  padding-left: 30px
-  padding-right: 30px
+  max-width: 1680px
+  padding-left: 40px
+  padding-right: 40px
   margin-left: auto
   margin-right: auto
 
@@ -25,87 +26,37 @@ body
   display: flex
   flex-direction: row
   align-items: center
-
-.common-title
-  font-size: 65px
-  line-height: 75px
-  font-family: $fontExtra
+  
+.common-btn
+  width: 200px
+  height: 45px
+  border: 1px solid $main2Color
+  text-align: center
+  margin-left: auto
+  margin-right: auto
+  display: flex
+  justify-content: center
+  align-items: center
   text-transform: uppercase
-  max-width: 780px
-  margin-top: 0
-  margin-bottom: 65px
+  font-size: 10px
+  font-family: $fontBold
+  text-decoration: none
+  color: $whiteColor
+  letter-spacing: 0.15em
+  transition: all $transitionSpeed $ease
   position: relative
-  padding-bottom: 65px
-  color: $whiteColor
-  letter-spacing: 0.02em
-  &:after
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 55px
-    height: 5px
-    background-color: $mainColor
-  &--black
-    color: $blackColor
-    padding-bottom: 0
-    &:after
-      display: none
-  
-.common-descr
-  font-size: 20px
-  line-height: 30px
-  max-width: 620px
-  color: $whiteColor
-  margin-top: 0
-  margin-bottom: 45px
-  
-.page-section
-  padding-top: 25px
-  padding-bottom: 30px
-.page-title
-  font-size: 40px
-  margin-top: 0
-  font-family: $fontExtra
-  margin-bottom: 45px
-  text-transform: uppercase
+  z-index: 2
+  &:hover
+    background-color: $main2Color
+  &--white
+    border-color: $whiteColor
+    background-color: $whiteColor
+    color: $mainColor
+    &:hover
+      color: $whiteColor
   
 [class*="ico"],
 [class*="icon"]
   display: inline-block
   fill: currentColor
-  
-+r($wide)
-  .common-title
-    font-size: 50px
-    line-height: 55px
-    margin-bottom: 40px
-    padding-bottom: 30px
-+r($desktop)
-  body
-    overflow: auto !important
-    &.no-scroll
-      overflow: hidden !important
-+r($tablet)
-  .container
-    padding-left: 15px
-    padding-right: 15px
-  .common-title
-    font-size: 27px
-    line-height: 32px
-    margin-bottom: 30px
-    padding-bottom: 20px
-  .common-descr
-    font-size: 18px
-    line-height: 26px
-  .page-title
-    font-size: 34px
-    margin-bottom: 25px
-  .page-section
-    padding: 20px 0
-    
-+r($mobile)
-  .page-title
-    font-size: 30px
-    margin-bottom: 20px
   

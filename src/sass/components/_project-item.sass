@@ -1,0 +1,48 @@
+.projects-row
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  justify-content: space-between
+  margin: 0 -10px
+.project-item
+  text-decoration: none
+  color: $mainColor
+  margin: 0 10px
+  width: calc(33.33% - 20px)
+  padding-bottom: 5px
+  &:hover
+    img
+      transform: scale(1.05)
+  &__img
+    margin-bottom: 24px
+    overflow: hidden
+    img
+      display: block
+      height: auto
+      width: 100%
+      transition: transform $transitionSpeed $ease
+  &__index
+    font-size: 10px
+    margin-bottom: 14px
+    display: block
+    text-transform: uppercase
+    font-family: $fontBold
+    letter-spacing: 0.15em
+  &__name
+    margin-top: 0
+    margin-bottom: 15px
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    font-size: 15px
+    line-height: 25px
+    max-width: 280px
+  &__about
+    display: inline-block
+    text-transform: uppercase
+    letter-spacing: 0.15em
+    font-size: 10px
+    padding: 3px 2px 1px 2px
+    border-bottom: 2px solid $main2Color
+    transition: background $transitionSpeed $ease
+    &:hover
+      background-color: $main2Color

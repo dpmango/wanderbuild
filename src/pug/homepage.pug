@@ -1,0 +1,68 @@
+---
+title: Homepage
+bodyClass: homepage-body
+---
+extends shared/_layout
+block content
+  main.page-main
+    section.main-slider
+      .main-slider__slide.main-slider__slide--one
+        .container
+          .main-slider__wrap.flex-wrap
+            h3.main-slider__quest Что мы делаем?
+            h2.main-slider__title Дома по индивидуальным проектам под ключ
+            a.common-btn(href="#") О компании
+      .main-slider__slide.main-slider__slide--two
+        .container
+          .main-slider__wrap.flex-wrap
+            h3.main-slider__quest Что мы делаем?
+            h2.main-slider__title Короткое название
+            a.common-btn(href="#") О компании
+    section.new-projects
+      .container
+        h2.new-projects__title Новые проекты
+        .projects-row
+          a.project-item(href="#")
+            .project-item__img
+              img(src="img/item-mini1.jpg")
+            span.project-item__index ID 25-03
+            h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
+            span.project-item__about О проекте
+          a.project-item(href="#")
+            .project-item__img
+              img(src="img/item-mini2.jpg")
+            span.project-item__index ID 25-03
+            h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
+            span.project-item__about О проекте
+          a.project-item(href="#")
+            .project-item__img
+              img(src="img/item-mini3.jpg")
+            span.project-item__index ID 25-03
+            h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
+            span.project-item__about О проекте
+    section.one-project
+      .container
+        .one-project__wrap.flex-wrap
+          span.one-project__index ID 25-03
+          h2.one-project__name Частный дом в поселке Знаменское поле
+          a.common-btn(href="#") Все проекты
+    section.why-us
+      .container
+        h2.why-us__title Почему Wanderbuild
+        .why-us__item
+          p.why-us__text «Мы одинаково хорошо учтем как предпочтения хозяина будущего жилища, так и стандарты рынка загородной недвижимости, которые сделают ваш объект ликвидным, и в то же время уникальным»
+          span.why-us__author ТИМУР ТУКАЕВ, Основатель
+    section.what-we-do
+      .container
+        h2.what-we-do__title Что мы делаем?
+        p.what-we-do__text Дом, в котором хочется жить. Недвижимость, в которую хочется вкладываться
+        a.common-btn.common-btn--white(href="#") Как мы работаем
+    section.callback
+      .container
+        h2.callback__title Обратная связь
+        p.callback__text Напишите нам и мы быстро свяжемся с вами!
+        form.callback__form(action="#").flex-wrap
+          input(type="text" placeholder="Имя").callback__input
+          input(type="mail" placeholder="E-mail").callback__input
+          button.callback__btn(type="submit")
+            +icon('ico-slider-right')

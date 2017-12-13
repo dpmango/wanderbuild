@@ -1,0 +1,9 @@
+<svg width="25" height="11" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Group Copy
+    </title>
+    <g stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <path d="M19 10l6-4.518L19 1z"/>
+        <path d="M18.5 5.5H.5"/>
+    </g>
+</svg>

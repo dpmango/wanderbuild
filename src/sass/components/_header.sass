@@ -1,0 +1,36 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  z-index: 10
+  border-bottom: 2px solid $whiteColor
+  transition: all 0.15s $ease
+  &__wrap
+    align-items: stretch
+  &__main
+    width: 30%
+    border-right: 2px solid $whiteColor
+    padding: 37px 0
+    position: relative
+    padding-right: 30px
+    justify-content: space-between
+  &__logo
+    color: $whiteColor
+  &__empty
+    width: 70%
+  .hamburger-inner
+    background-color: $whiteColor
+    &:after,
+    &:before
+      background-color: $whiteColor
+  &--black
+    .header__logo
+      color: $mainColor
+    .hamburger-inner
+      background-color: $mainColor
+      &:before,
+      &:after
+        background-color: $mainColor
+    
