@@ -1,0 +1,32 @@
+// FONTS
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../../fonts/proxima_nova_bold.woff2') format('woff2'),
+         url('../../fonts/proxima_nova_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_thextrabold';
+    src: url('../../fonts/proxima_nova_extrabold.woff2') format('woff2'),
+         url('../../fonts/proxima_nova_extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../../fonts/proxima_nova_light.woff2') format('woff2'),
+         url('../../fonts/proxima_nova_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../../fonts/proxima_nova_regular.woff2') format('woff2'),
+         url('../../fonts/proxima_nova_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

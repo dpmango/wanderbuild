@@ -1,0 +1,21 @@
+include _mixins
+doctype html
+html(lang="ru")
+  head
+    include _head
+
+  body(class=bodyClass)
+    include ../../../dist/img/sprite.svg
+    //include ../components/_menu
+    //include ../components/_mobile-menu
+    //include ../components/_callback-form
+    block header
+      include ../components/_header
+    // Main part
+    block content
+
+    block footer
+      include ../components/_footer
+    // Scripts
+    block scripts
+      include _scripts

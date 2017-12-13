@@ -1,0 +1,5 @@
+ProjectTitle: Wanderbuild
+
+PageList:
+- file: homepage.html
+  ready: 50

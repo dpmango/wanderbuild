@@ -1,0 +1,111 @@
+*
+  box-sizing: border-box
+  outline: none
+  -webkit-overflow-scrolling: touch
+
+body
+  font-family: $fontLight
+  position: relative
+  &>svg
+    display: none
+  
+.no-scroll
+  height: 100vh
+  overflow: hidden
+
+.container
+  width: 100%
+  max-width: 1510px
+  padding-left: 30px
+  padding-right: 30px
+  margin-left: auto
+  margin-right: auto
+
+.flex-wrap
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.common-title
+  font-size: 65px
+  line-height: 75px
+  font-family: $fontExtra
+  text-transform: uppercase
+  max-width: 780px
+  margin-top: 0
+  margin-bottom: 65px
+  position: relative
+  padding-bottom: 65px
+  color: $whiteColor
+  letter-spacing: 0.02em
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 55px
+    height: 5px
+    background-color: $mainColor
+  &--black
+    color: $blackColor
+    padding-bottom: 0
+    &:after
+      display: none
+  
+.common-descr
+  font-size: 20px
+  line-height: 30px
+  max-width: 620px
+  color: $whiteColor
+  margin-top: 0
+  margin-bottom: 45px
+  
+.page-section
+  padding-top: 25px
+  padding-bottom: 30px
+.page-title
+  font-size: 40px
+  margin-top: 0
+  font-family: $fontExtra
+  margin-bottom: 45px
+  text-transform: uppercase
+  
+[class*="ico"],
+[class*="icon"]
+  display: inline-block
+  fill: currentColor
+  
++r($wide)
+  .common-title
+    font-size: 50px
+    line-height: 55px
+    margin-bottom: 40px
+    padding-bottom: 30px
++r($desktop)
+  body
+    overflow: auto !important
+    &.no-scroll
+      overflow: hidden !important
++r($tablet)
+  .container
+    padding-left: 15px
+    padding-right: 15px
+  .common-title
+    font-size: 27px
+    line-height: 32px
+    margin-bottom: 30px
+    padding-bottom: 20px
+  .common-descr
+    font-size: 18px
+    line-height: 26px
+  .page-title
+    font-size: 34px
+    margin-bottom: 25px
+  .page-section
+    padding: 20px 0
+    
++r($mobile)
+  .page-title
+    font-size: 30px
+    margin-bottom: 20px
+  
