@@ -27,7 +27,7 @@ var _document = $(document);
   
   // animation
   new WOW().init({
-    offset: 50
+    offset: 30
   });
   
   /////////
@@ -102,12 +102,12 @@ var _document = $(document);
         }
       ]
     }
-  if (_window.width() < 768) { 
+  if (_window.width() < 767) { 
     _projectsSlick.slick(projectsSlickOptions);
   }
     
   _window.resize(300, function(e){
-    if (_window.width() > 768 ) {
+    if (_window.width() > 767 ) {
       if (_projectsSlick.hasClass('slick-initialized')) {
         _projectsSlick.slick('unslick');
       }
