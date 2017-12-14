@@ -10,7 +10,7 @@
   &__wrap
     align-items: stretch
   &__main
-    width: 30%
+    width: 400px
     border-right: 2px solid $whiteColor
     padding: 37px 0
     position: relative
@@ -21,7 +21,7 @@
     position: relative
     z-index: 3
   &__empty
-    width: 70%
+    width: calc(100% - 400px)
   &__btn
     z-index: 3
   .hamburger-inner
@@ -38,13 +38,6 @@
       &:after
         background-color: $mainColor
       
-+r($wide)
-  .header
-    &__main
-      width: 40%
-    &__empty
-      width: 60%
-    
 +r($desktop)
   .header
     &__main,
