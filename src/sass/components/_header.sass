@@ -18,8 +18,12 @@
     justify-content: space-between
   &__logo
     color: $whiteColor
+    position: relative
+    z-index: 3
   &__empty
     width: 70%
+  &__btn
+    z-index: 3
   .hamburger-inner
     background-color: $whiteColor
     &:after,
@@ -33,4 +37,30 @@
       &:before,
       &:after
         background-color: $mainColor
+      
++r($wide)
+  .header
+    &__main
+      width: 40%
+    &__empty
+      width: 60%
+    
++r($desktop)
+  .header
+    &__main,
+    &__empty
+      width: 50%
+    &__main
+      padding: 30px 0
+      padding-right: 30px
+      
++r($tablet)
+  .header
+    &__main
+      width: 100%
+      padding-right: 0
+      border: 0
+      padding: 26px 0
+    &__empty
+      width: 0
     

@@ -9,9 +9,9 @@ block content
       .main-slider__slide.main-slider__slide--one
         .container
           .main-slider__wrap.flex-wrap
-            h3.main-slider__quest Что мы делаем?
-            h2.main-slider__title Дома по индивидуальным проектам под ключ
-            a.common-btn(href="#") О компании
+            h3.main-slider__quest.wow.fadeInUp(data-wow-delay="0.9s") Что мы делаем?
+            h2.main-slider__title.wow.fadeInUp(data-wow-delay="1s") Дома по индивидуальным проектам под ключ
+            a.common-btn.wow.fadeInUp(data-wow-delay="1.1s" href="#") О компании
       .main-slider__slide.main-slider__slide--two
         .container
           .main-slider__wrap.flex-wrap
@@ -21,7 +21,7 @@ block content
     section.new-projects
       .container
         h2.new-projects__title Новые проекты
-        .projects-row
+        .projects-row.wow.fadeInUp(data-wow-delay="0.7s")
           a.project-item(href="#")
             .project-item__img
               img(src="img/item-mini1.jpg")
@@ -43,9 +43,9 @@ block content
     section.one-project
       .container
         .one-project__wrap.flex-wrap
-          span.one-project__index ID 25-03
-          h2.one-project__name Частный дом в поселке Знаменское поле
-          a.common-btn(href="#") Все проекты
+          span.one-project__index.wow.fadeInUp(data-wow-delay="0.7s") ID 25-03
+          h2.one-project__name.wow.fadeInUp(data-wow-delay="0.9s") Частный дом в поселке Знаменское поле
+          a.common-btn.wow.fadeInUp(data-wow-delay="1.1s" href="#") Все проекты
     section.why-us
       .container
         h2.why-us__title Почему Wanderbuild
@@ -54,15 +54,15 @@ block content
           span.why-us__author ТИМУР ТУКАЕВ, Основатель
     section.what-we-do
       .container
-        h2.what-we-do__title Что мы делаем?
-        p.what-we-do__text Дом, в котором хочется жить. Недвижимость, в которую хочется вкладываться
+        h2.what-we-do__title.wow.fadeInUp(data-wow-delay="0.8s") Что мы делаем?
+        p.what-we-do__text.wow.fadeInUp(data-wow-delay="1s") Дом, в котором хочется жить. Недвижимость, в которую хочется вкладываться
         a.common-btn.common-btn--white(href="#") Как мы работаем
     section.callback
-      .container
+      .container.wow.fadeInUp(data-wow-delay="0.7s")
         h2.callback__title Обратная связь
         p.callback__text Напишите нам и мы быстро свяжемся с вами!
         form.callback__form(action="#").flex-wrap
           input(type="text" placeholder="Имя").callback__input
           input(type="mail" placeholder="E-mail").callback__input
           button.callback__btn(type="submit")
-            +icon('ico-slider-right')
+            +icon('ico-slider-left')

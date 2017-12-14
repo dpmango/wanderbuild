@@ -232,11 +232,138 @@
     align-items: center
     border-radius: 0
     color: $whiteColor
-    font-size: 12px
-    padding: 15px
+    font-size: 19px
+    line-height: 19px
+    padding: 12px 22px
     transition: all $transitionSpeed $ease
+    max-height: 45px
+    .ico
+      transform: rotate(-180deg)
     &:hover
       color: $main2Color
       background-color: $whiteColor
       cursor: pointer
     
+    
++r($desktop)
+  .main-slider
+    &__title
+      font-size: 42px
+      line-height: 48px
+    &__slide
+      padding-top: 170px
+      padding-bottom: 140px
+      min-height: 540px
+  .new-projects
+    padding-top: 40px
+    padding-bottom: 40px
+  .one-project
+    &__wrap
+      min-height: 540px
+    &__name
+      font-size: 42px
+      line-height: 48px
+  .why-us
+    padding: 40px 0
+  .what-we-do
+    padding: 50px 0
+    &__text
+      font-size: 42px
+      line-height: 48px
+  .callback
+    min-height: 420px
+    
++r($tablet)
+  .main-slider
+    .slick-next,
+    .slick-prev
+      display: none
+    &__slide
+      padding-top: 90px
+      padding-bottom: 60px
+      min-height: 380px
+    &__wrap
+      align-items: flex-start
+    &__quest
+      font-size: 12px
+      line-height: 20px
+      margin-bottom: 30px
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 35px
+      text-align: left
+      max-width: 260px
+      margin-left: 0
+      
+  .new-projects
+    &__title
+      margin-bottom: 35px
+      
+  .one-project
+    &__wrap
+      min-height: 300px
+      align-items: flex-start
+      justify-content: flex-start
+      padding-top: 20px
+      padding-bottom: 60px
+    &__index
+      font-size: 12px
+      line-height: 20px
+      text-align: left
+      margin-bottom: 28px
+    &__name
+      text-align: left
+      margin-left: 0
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 35px
+      
+  .why-us
+    &__item
+      padding: 30px 20px
+    &__text
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 30px
+    &__author
+      font-size: 12px
+      line-height: 20px
+      
+  .what-we-do
+    padding-top: 33px
+    padding-bottom: 45px
+    &__title
+      text-align: left
+      font-size: 12px
+      line-height: 20px
+      margin-bottom: 28px
+    &__text
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 35px
+      text-align: left
+  .callback
+    padding-top: 33px
+    padding-bottom: 60px
+    min-height: 450px
+    &__title
+      font-size: 12px
+      line-height: 20px
+      margin-bottom: 12px
+      text-align: left
+    &__text
+      text-align: left
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 35px
+    &__form
+      flex-direction: column
+    &__input
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 20px
+    &__btn
+      margin-left: 0
+      max-width: 60px
+      margin-top: 5px

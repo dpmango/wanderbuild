@@ -46,3 +46,23 @@
     transition: background $transitionSpeed $ease
     &:hover
       background-color: $main2Color
+    
++r($desktop)
+  .project-item
+    &__name
+      font-size: 13px
+      line-height: 20px
+    
++r($tablet)
+  .projects-row
+    padding-bottom: 40px
+    .slick-dots
+      bottom: 0
+  .project-item
+    &__index,
+    &__name,
+    &__about
+      font-size: 12px
+      line-height: 20px
+      text-transform: uppercase
+      margin-bottom: 10px
