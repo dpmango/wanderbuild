@@ -27,6 +27,35 @@ body
   flex-direction: row
   align-items: center
   
+.breadcrumbs
+  &__link
+    text-decoration: none
+    text-transform: uppercase
+    position: relative
+    font-size: 10px
+    line-height: 12px
+    letter-spacing: 0.15em
+    margin-right: 20px
+    color: $mainColor
+    transition: all $transitionSpeed $ease
+    border-bottom: 1px solid transparent
+    &:hover
+      border-color: $mainColor
+    &:last-child
+     &:after
+      display: none
+    &:after
+      content: '/'
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -12px
+  &--white
+    .breadcrumbs__link
+      color: $whiteColor
+      &:hover
+        border-color: $whiteColor
+  
 .common-btn
   width: 200px
   height: 45px
@@ -70,4 +99,6 @@ body
     width: 140px
     height: 40px
     margin-left: 0
+  .container--breadcrumbs
+    display: none
   

@@ -12,14 +12,21 @@ var _document = $(document);
     e.preventDefault();
   });
   
+  // breadcrumbs
+  if ($('.container--breadcrumbs').length > 0) {
+    $('.container--breadcrumbs').appendTo($('.header__empty'));
+  }
+  
   // desktop menu
   _document.on('click', '[js-open-menu]', function(){
     if ($(this).hasClass('is-active')) {
       $('body').removeClass('no-scroll');
+      $('.header').removeClass('is-open');
       $(this).removeClass('is-active');
       $('.main-nav').removeClass('is-active');
     } else {
       $('body').addClass('no-scroll');
+      $('.header').addClass('is-open');
       $(this).addClass('is-active');
       $('.main-nav').addClass('is-active');
     }
@@ -35,35 +42,27 @@ var _document = $(document);
   /////////
   if ($('body').hasClass('homepage-body')) {
     $('.footer').addClass('footer--white');
+    $('.header').addClass('header--white');
   }
   
   
   // black header on scroll
   _window.on('scroll', function(){
-    var sectionHeight = $('.main-slider__slide').innerHeight();
     if (_window.width > 767) {
-      if (_window.scrollTop() > (sectionHeight - 93)) {
-        $('.header').css({
-          'background-color' : '#000',
-          'border-color' : 'transparent',
-        })
+      if (_window.scrollTop() > 140) {
+        $('.header').addClass('header--black')
+        $('.breadcrumbs').addClass('breadcrumbs--white')
       } else {
-        $('.header').css({
-          'background-color' : 'transparent',
-          'border-color' : '#fff',
-        })
+        $('.header').removeClass('header--black')
+        $('.breadcrumbs').removeClass('breadcrumbs--white')
       }
     } else {
-      if (_window.scrollTop() > (sectionHeight - 73)) {
-        $('.header').css({
-          'background-color' : '#000',
-          'border-color' : 'transparent',
-        })
+      if (_window.scrollTop() > 20) {
+        $('.header').addClass('header--black')
+        $('.breadcrumbs').addClass('breadcrumbs--white')
       } else {
-        $('.header').css({
-          'background-color' : 'transparent',
-          'border-color' : '#fff',
-        })
+        $('.header').removeClass('header--black')
+        $('.breadcrumbs').removeClass('breadcrumbs--white')
       }
     }
   });
@@ -82,7 +81,7 @@ var _document = $(document);
   })
   
   // new projects slider
-  var _projectsSlick = $('.projects-row');
+  var _projectsSlick = $('[js-projects-slider]');
   var projectsSlickOptions = {
       slidesToShow: 2,
       slidesToScroll: 1,

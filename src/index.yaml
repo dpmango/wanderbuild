@@ -2,4 +2,6 @@ ProjectTitle: Wanderbuild
 
 PageList:
 - file: homepage.html
-  ready: 50
+  ready: 90
+- file: list.html
+  ready: 90

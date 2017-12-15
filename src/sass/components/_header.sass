@@ -5,38 +5,69 @@
   width: 100%
   background-color: transparent
   z-index: 10
-  border-bottom: 2px solid $whiteColor
+  border-bottom: 2px solid $mainColor
   transition: all 0.15s $ease
   &__wrap
     align-items: stretch
   &__main
     width: 400px
-    border-right: 2px solid $whiteColor
+    border-right: 2px solid $mainColor
     padding: 37px 0
     position: relative
     padding-right: 30px
     justify-content: space-between
   &__logo
-    color: $whiteColor
+    color: $mainColor
     position: relative
     z-index: 3
+    transition: color $transitionSpeed $ease
   &__empty
     width: calc(100% - 400px)
+    padding-left: 60px
+    display: flex
+    align-items: center
   &__btn
     z-index: 3
   .hamburger-inner
-    background-color: $whiteColor
+    background-color: $mainColor
     &:after,
     &:before
-      background-color: $whiteColor
-  &--black
-    .header__logo
-      color: $mainColor
-    .hamburger-inner
       background-color: $mainColor
+  &.is-open
+    .header__logo
+      color: $whiteColor
+    .hamburger-inner
+      background-color: $whiteColor
       &:before,
       &:after
-        background-color: $mainColor
+        background-color: $whiteColor
+  &--white
+    border-color: $whiteColor
+    .header__main
+      border-color: $whiteColor
+    .header__logo
+      color: $whiteColor
+    .hamburger-inner
+      background-color: $whiteColor
+      &:before,
+      &:after
+        background-color: $whiteColor
+  &--black
+    background-color: $blackColor
+    border-color: transparent
+    .header__main
+      border-color: $whiteColor
+    .header__logo
+      color: $whiteColor
+    .hamburger-inner
+      background-color: $whiteColor
+      &:before,
+      &:after
+        background-color: $whiteColor
+      
++r($wide)
+  .header__empty
+    padding-left: 30px
       
 +r($desktop)
   .header
@@ -56,4 +87,5 @@
       padding: 26px 0
     &__empty
       width: 0
+      padding: 0
     
