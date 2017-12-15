@@ -1,0 +1,95 @@
+.contacts
+  padding-top: 140px
+  padding-bottom: 100px
+  &__wrap
+    align-items: flex-start
+  &__empty
+    width: 400px
+  &__main
+    width: calc(100% - 400px)
+    padding-left: 60px
+    .breadcrumbs__link
+      display: none
+  &__descr
+    margin-bottom: 30px
+    max-width: 600px
+  &__btn
+    margin-left: 0
+    color: $mainColor
+    width: 140px
+    height: 40px
+  &__map
+    margin: 50px 0
+    min-height: 400px
+    width: 100%
+    iframe
+      width: 100%
+      height: 100%
+  &__main.flex-wrap
+    align-items: flex-start
+  &__half
+    width: 390px
+  &__subtitle
+    margin-top: 10px
+    margin-bottom: 10px
+    font-size: 10px
+    line-height: 12px
+    letter-spacing: 0.15em
+    font-family: $fontBold
+    text-transform: uppercase
+  &__link
+    font-size: 16px
+    line-height: 25px
+    display: block
+    color: $mainColor
+    text-decoration: none
+    &--last
+      margin-bottom: 32px
+    span
+      border-bottom: 1px solid $main2Color
+      transition: all $transitionSpeed $ease
+      padding: 0 2px
+      &:hover
+        background-color: $main2Color
+  &__address
+    max-width: 250px
+    font-size: 16px
+    line-height: 25px
+    margin: 0
+    
++r($wide)
+  .contacts
+    &__main
+      padding-left: 30px
+    
++r($desktop)
+  .contacts
+    &__empty
+      width: 0
+    &__main
+      padding-left: 0
+      width: 100%
+      
++r($tablet)
+  .contacts
+    padding-top: 90px
+    padding-bottom: 40px
+    &__main
+      .breadcrumbs__link
+        display: inline-block
+        margin-bottom: 30px
+        font-size: 12px
+        &:after
+          display: none
++r($mobile)
+  .contacts
+    &__map
+      min-height: 260px
+      margin: 40px 0
+    &__main.flex-wrap
+      flex-direction: column
+    &__half
+      width: 100%
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0

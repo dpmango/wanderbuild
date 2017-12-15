@@ -5,3 +5,7 @@ PageList:
   ready: 90
 - file: list.html
   ready: 90
+- file: list-item.html
+  ready: 90
+- file: contacts.html
+  ready: 90
