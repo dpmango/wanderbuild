@@ -303,5 +303,31 @@ var _document = $(document);
       return _projectsSlick.slick(projectsSlickOptions);
     }
   });
+  
+  
+  $('.how-section__header-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    centerMode: true,
+    infinite: false,
+    centerPadding: '20px',
+    accessibility: false,
+    asNavFor: '.how-section__main-slider'
+  });
+  $('.how-section__main-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.how-section__header-slider',
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    infinite: false,
+    centerPadding: '20px',
+    accessibility: false,
+    focusOnSelect: true
+  });
+  
 });
 

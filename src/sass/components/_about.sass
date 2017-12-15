@@ -1,0 +1,139 @@
+.about
+  &__link
+    display: inline-block
+    text-decoration: none
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 15px
+    font-size: 15px
+    line-height: 25px
+    font-family: $fontBold
+    color: $mainColor
+  &__advantages
+    background-color: $main2Color
+    padding-top: 32px
+    padding-bottom: 15px
+    margin-bottom: 55px
+    .contacts__main.flex-wrap
+      align-items: stretch
+    &-half
+      width: 350px
+    &-title
+      margin-top: 0
+      margin-bottom: 5px
+      text-transform: uppercase
+      letter-spacing: 0.15em
+      color: $whiteColor
+      font-family: $fontBold
+      font-size: 15px
+      line-height: 25px
+    &-text
+      margin-top: 0
+      margin-bottom: 20px
+      font-size: 16px
+      line-height: 25px
+      max-width: 240px
+  &__team
+    &-wrap
+      margin-top: 55px
+      align-items: stretch
+      flex-wrap: wrap
+      margin-left: -10px
+      margin-right: -10px
+    &-text
+      max-width: 640px
+    &-item
+      width: calc(33.33% - 20px)
+      margin-bottom: 25px
+      margin-left: 10px
+      margin-right: 10px
+      &:hover
+        img
+          transform: scale(1.05)
+        .about__team-mail
+          opacity: 1
+          visibility: visible
+          transform: translateY(0)
+    &-img
+      overflow: hidden
+      margin-bottom: 17px
+      img
+        display: block
+        height: auto
+        width: 100%
+        transition: all $transitionSpeed $ease
+    &-name
+      text-transform: uppercase
+      margin-top: 0
+      margin-bottom: 5px
+      font-size: 15px
+      line-height: 25px
+      font-family: $fontBold
+    &-pos
+      margin-top: 0
+      margin-bottom: 20px
+      font-size: 16px
+      line-height: 25px
+      color: #959595
+      max-width: 310px
+    &-mail
+      text-decoration: none
+      margin: 0
+      display: inline-block
+      padding: 0 2px
+      font-size: 16px
+      line-height: 25px
+      border-bottom: 1px solid $main2Color
+      transition: all $transitionSpeed $ease
+      color: $mainColor
+      opacity: 0
+      visibility: hidden
+      transform: translateY(15px)
+      &:hover
+        background-color: $main2Color
+        opacity: 1
+        visibility: visible
+        transform: translateY(0)
+      
++r($desktop)
+  .about
+    padding-bottom: 60px
+    &__team
+      &-item
+        width: calc(50% - 20px)
+      
++r($tablet)
+  .about
+    &__advantages
+      margin-bottom: 30px
+      .contacts__main
+        flex-direction: row
+        margin-left: -10px
+        margin-right: -10px
+      &-half
+        width: calc(50% - 20px)
+        margin-left: 10px
+        margin-right: 10px
+      &-title
+        font-size: 12px
+        line-height: 20px
+      &-text
+        font-size: 14px
+        line-height: 20px
+    &__team
+      &-mail
+        opacity: 1
+        visibility: visible
+        transform: translateY(0)
+        
++r($mobile)
+  .about
+    &__team
+      &-wrap
+        margin-left: 0
+        margin-right: 0
+      &-item
+        width: 100%
+        margin-left: 0
+        margin-right: 0
+        margin-bottom: 30px

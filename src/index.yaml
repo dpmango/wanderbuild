@@ -9,3 +9,7 @@ PageList:
   ready: 90
 - file: contacts.html
   ready: 90
+- file: about.html
+  ready: 90
+- file: how.html
+  ready: 90
