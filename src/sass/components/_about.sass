@@ -89,11 +89,27 @@
       opacity: 0
       visibility: hidden
       transform: translateY(15px)
-      &:hover
+      position: relative
+      span
+        position: relative
+        z-index: 2
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 0
         background-color: $main2Color
+        transition: all $transitionSpeed $ease
+        z-index: 1
+      &:hover
+        //background-color: $main2Color
         opacity: 1
         visibility: visible
         transform: translateY(0)
+        &:before
+          height: 100%
       
 +r($desktop)
   .about

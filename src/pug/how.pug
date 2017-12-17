@@ -8,7 +8,7 @@ block content
       .breadcrumbs
         a.breadcrumbs__link(href="#") Главная
         a.breadcrumbs__link(href="#") Контакты
-    section.contacts.how-section
+    section.contacts.how-section.wow.fadeIn(data-wow-delay="0.7s")
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
@@ -24,7 +24,7 @@ block content
           .contacts__main
             h1.contacts__title.common-title.wow.fadeInUp(data-wow-delay="0.9s") Услуги и компетенции
             p.contacts__descr.common-text.wow.fadeInUp(data-wow-delay="0.9s") Широта наших компетенций позволяет вам  взаимодействовать с одной компанией на протяжении всего периода строительства дома, а значит экономить свое время и силы и быть уверенными в успехе проекта.
-    .about__advantages.how-section__advantages
+    .about__advantages.how-section__advantages.wow.fadeInUp(data-wow-delay="0.7s")
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
@@ -46,7 +46,7 @@ block content
           .contacts__main
             h2.common-subtitle.wow.fadeInUp(data-wow-delay="0.7s") Этапность работ
             p.about__team-text.common-text.wow.fadeInUp(data-wow-delay="0.7s") Стандартный проект «под ключ» в нашей компании можно разделить на несколько этапов. Поэтапный подход помогает контролировать все шаги реализации проекта и гарантировать максимально качественный конечный результат.
-    .how-section__sliders
+    .how-section__sliders.wow.fadeInUp(data-wow-delay="0.7s")
       .how-section__header-slider.flex-wrap
         .how-section__header-item 1 ШАГ <br> НАЧАЛО РАБОТЫ
         .how-section__header-item 2 ШАГ <br> Проектирование
@@ -69,7 +69,7 @@ block content
           .how-section__main-img
             img(src="img/slider1.jpg")
           .how-section__main-text Мы занимаемся проектировкой и создаем архитектурное решение, а после на его основе конструктивное решение и инженерный проект.
-    section.new-projects
+    section.new-projects.wow.fadeIn(data-wow-delay="0.7s")
       .container
         h2.new-projects__title.wow.fadeInUp(data-wow-delay="1s") Новые проекты
         .projects-row.wow.fadeInUp(js-projects-slider data-wow-delay="0.9s")
@@ -78,16 +78,19 @@ block content
               img(src="img/item-mini1.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
-            span.project-item__about О проекте
+            span.project-item__about 
+              span О проекте
           a.project-item(href="#")
             .project-item__img
               img(src="img/item-mini2.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
-            span.project-item__about О проекте
+            span.project-item__about 
+              span О проекте
           a.project-item(href="#")
             .project-item__img
               img(src="img/item-mini3.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
-            span.project-item__about О проекте
+            span.project-item__about 
+              span О проекте

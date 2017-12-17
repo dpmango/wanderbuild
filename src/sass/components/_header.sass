@@ -5,13 +5,13 @@
   width: 100%
   background-color: transparent
   z-index: 10
-  border-bottom: 2px solid $mainColor
+  border-bottom: 1px solid $mainColor
   transition: all 0.15s $ease
   &__wrap
     align-items: stretch
   &__main
     width: 400px
-    border-right: 2px solid $mainColor
+    border-right: 1px solid $mainColor
     padding: 37px 0
     position: relative
     padding-right: 30px
@@ -21,6 +21,8 @@
     position: relative
     z-index: 3
     transition: color $transitionSpeed $ease
+    &:hover
+      color: $main2Color !important
   &__empty
     width: calc(100% - 400px)
     padding-left: 60px
@@ -28,6 +30,7 @@
     align-items: center
   &__btn
     z-index: 3
+    padding: 5px
   .hamburger-inner
     background-color: $mainColor
     &:after,

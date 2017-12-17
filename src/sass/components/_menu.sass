@@ -27,11 +27,22 @@
     font-family: $fontReg
     span
       padding: 2px
-      border-bottom: 1px solid transparent
+      position: relative
       transition: all $transitionSpeed $ease
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        transition: width $transitionSpeed $ease
+        width: 0
+        height: 2px
+        background-color: $menuColor
     &.is-active span,
     &:hover span
       border-color: $menuColor
+      &:before
+        width: 100%
   &__link
     color: $menuColor
     text-decoration: none
@@ -45,8 +56,11 @@
     span 
       border-bottom: 1px solid transparent
       transition: all $transitionSpeed $ease
-    &:hover span
+    &:hover span,
+    &--dev span
       border-color: $menuColor
+    &--dev:hover span
+      border-color: transparent
       
 +r($desktop)
   .main-nav

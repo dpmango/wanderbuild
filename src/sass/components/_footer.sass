@@ -3,6 +3,7 @@
   padding: 17px 0
   position: relative
   z-index: 3
+  margin-top: auto
   &__wrap
     justify-content: space-between
   &__dev
@@ -12,8 +13,11 @@
     letter-spacing: 0.15em
     color: $mainColor
     width: 45%
-    &:hover
-      text-decoration: underline
+    span
+      padding: 0 2px
+      transition: all $transitionSpeed $ease
+      &:hover
+        background-color: $main2Color
   &__copy
     width: 55%
     text-transform: uppercase
