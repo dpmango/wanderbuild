@@ -314,7 +314,26 @@ var _document = $(document);
     infinite: false,
     centerPadding: '20px',
     accessibility: false,
-    asNavFor: '.how-section__main-slider'
+    swipe: false,
+    asNavFor: '.how-section__main-slider',
+    responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+            swipe: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            swipe: true
+          }
+        }
+      ]
   });
   $('.how-section__main-slider').slick({
     slidesToShow: 3,
@@ -326,7 +345,26 @@ var _document = $(document);
     infinite: false,
     centerPadding: '20px',
     accessibility: false,
-    focusOnSelect: true
+    swipe: false,
+    focusOnSelect: true,
+    responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+            swipe: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            swipe: true
+          }
+        }
+      ]
   });
   
 });
