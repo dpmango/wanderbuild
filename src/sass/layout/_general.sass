@@ -10,9 +10,15 @@ body
   display: flex
   flex-direction: column
   min-height: 100vh
+  overflow-x: hidden
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
   &>svg
     display: none
-  
+
+html
+  overflow-y: scroll
+
 .no-scroll
   height: 100vh
   overflow: hidden
@@ -29,8 +35,8 @@ body
   display: flex
   flex-direction: row
   align-items: center
-  
-  
+
+
 .common-title
   font-size: 48px
   margin-top: 0
@@ -50,7 +56,7 @@ body
   margin: 0
   font-size: 16px
   line-height: 25px
-  
+
 .common-btn
   width: 200px
   height: 45px
@@ -78,7 +84,7 @@ body
     color: $mainColor
     &:hover
       color: $whiteColor
-    
+
 .breadcrumbs
   &__link
     text-decoration: none
@@ -107,30 +113,32 @@ body
       color: $whiteColor
       &:hover
         border-color: $whiteColor
-  
+
 [class*="ico"],
 [class*="icon"]
   display: inline-block
   fill: currentColor
-  
+
 ::-webkit-scrollbar
-    width: 5px
- 
+  position: absolute
+  width: 5px
+
 /* Track */
 ::-webkit-scrollbar-track
   border-radius: 0px
   background-color: $blackColor
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb
   border-radius: 00px
   background-color: $main2Color
-  
-  
+
+
 +r($desktop)
   .container
     padding-left: 30px
     padding-right: 30px
+
 +r($tablet)
   .common-title
     font-size: 24px
@@ -148,4 +156,3 @@ body
   .common-text
     font-size: 14px
     line-height: 20px
-  

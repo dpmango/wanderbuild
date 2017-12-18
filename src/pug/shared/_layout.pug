@@ -5,16 +5,15 @@ html(lang="ru")
     include _head
 
   body(class=bodyClass)
-    include ../../../dist/img/sprite.svg
-    //include ../components/_mobile-menu
-    //include ../components/_callback-form
-    block header
-      include ../components/_header
-    // Main part
-    block content
+    #barba-wrapper
+      block header
+        include ../components/_header
+        // CHANGEBALE - barba loading this in pjax
+        .page
+          block content
 
-    block footer
-      include ../components/_footer
-    // Scripts
+          block footer
+            include ../components/_footer
+
     block scripts
       include _scripts

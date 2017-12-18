@@ -38,40 +38,42 @@
       background-color: $mainColor
   &.is-open
     .header__logo
-      color: $whiteColor
+      color: white
     .hamburger-inner
-      background-color: $whiteColor
+      background-color: white
       &:before,
       &:after
-        background-color: $whiteColor
-  &--white
-    border-color: $whiteColor
-    .header__main
-      border-color: $whiteColor
-    .header__logo
-      color: $whiteColor
-    .hamburger-inner
-      background-color: $whiteColor
-      &:before,
-      &:after
-        background-color: $whiteColor
+        background-color: white
   &--black
-    background-color: $blackColor
+    background-color: black
     border-color: transparent
     .header__main
-      border-color: $whiteColor
+      border-color: white
     .header__logo
-      color: $whiteColor
+      color: white
     .hamburger-inner
-      background-color: $whiteColor
+      background-color: white
       &:before,
       &:after
-        background-color: $whiteColor
-      
+        background-color: white
+
+.homepage-body
+  .header
+    border-color: white
+    .header__main
+      border-color: white
+    .header__logo
+      color: white
+    .hamburger-inner
+      background-color: white
+      &:before,
+      &:after
+        background-color: white
+        
 +r($wide)
   .header__empty
     padding-left: 30px
-      
+
 +r($desktop)
   .header
     &__main,
@@ -80,7 +82,7 @@
     &__main
       padding: 30px 0
       padding-right: 30px
-      
+
 +r($tablet)
   .header
     &__main
@@ -91,4 +93,3 @@
     &__empty
       width: 0
       padding: 0
-    

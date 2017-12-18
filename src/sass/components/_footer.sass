@@ -25,21 +25,25 @@
     letter-spacing: 0.15em
     text-align: right
     color: $mainColor
-  &--white
-    border-color: $whiteColor
+
+// hmpage only
+.homepage-body
+  .footer
+    border-color: white
     margin-top: -46px
     .footer__dev,
     .footer__copy
-      color: $whiteColor
-      
+      color: white
+
 +r($tablet)
   .footer
     padding: 20px 0
-    &--white
-      margin-top: -56px
     &__dev
       display: none
     &__copy
       width: 100%
       text-align: left
-    
+  // hmpage only
+  .homepage-body
+    .footer
+    margin-top: -56px

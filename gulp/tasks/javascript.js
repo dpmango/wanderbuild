@@ -6,14 +6,13 @@ var concat      = require('gulp-concat');
 var uglifyJs    = require('gulp-uglify');
 var config      = require('../config');
 
-// path.resolve('bower_components', 'animejs/anime.min.js'),
-// path.resolve('node_modules', 'gsap/TweenMax.js'),
-
 gulp.task('javascript:vendor', function() {
   return gulp.src([
       path.resolve('bower_components', 'jquery/dist/jquery.min.js'),
+      path.resolve('bower_components', 'svg4everybody/dist/svg4everybody.min.js'),
       path.resolve('bower_components', 'slick-carousel/slick/slick.min.js'),
-      path.resolve('bower_components', 'wow/dist/wow.min.js'),
+      path.resolve('bower_components', 'scrollMonitor/scrollMonitor.js'),
+      path.resolve('bower_components', 'barba.js/dist/barba.min.js'),
       path.resolve('bower_components', 'jquery-validation/dist/jquery.validate.min.js'),
       config.src.js + '/vendor/**/*.js'
      ])

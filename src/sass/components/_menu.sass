@@ -4,7 +4,7 @@
   left: -40px
   width: calc(100% + 42px)
   height: 100vh
-  background-color: $blackColor
+  background-color: black
   padding: 120px 40px 40px 40px
   display: flex
   flex-direction: column
@@ -18,7 +18,7 @@
     visibility: visible
     transform: translateY(0px)
   &__item
-    color: $whiteColor
+    color: white
     text-decoration: none
     display: block
     font-size: 24px
@@ -53,7 +53,7 @@
     font-family: $fontMedium
     letter-spacing: 0.15em
     margin: 5px 0
-    span 
+    span
       border-bottom: 1px solid transparent
       transition: all $transitionSpeed $ease
     &:hover span,
@@ -61,12 +61,12 @@
       border-color: $menuColor
     &--dev:hover span
       border-color: transparent
-      
+
 +r($desktop)
   .main-nav
     width: calc(100% + 32px)
     left: -30px
-  
+
 +r($tablet)
   .main-nav
     width: calc(100% + 60px)
