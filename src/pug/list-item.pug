@@ -6,35 +6,43 @@ block content
   main.page-main
     .container--breadcrumbs
       .breadcrumbs
-        a.breadcrumbs__link(href="#") Главная
-        a.breadcrumbs__link(href="#") Проекты
+        a.breadcrumbs__link(href="homepage.html") Главная
+        a.breadcrumbs__link(href="list.html") Проекты
         a.breadcrumbs__link(href="#") ID 23-11JQ
+    // PROJECT SECTION :: START
     section.list-section
       .container
         .list-section__wrap.flex-wrap
-          aside.list-section__aside.list-section__aside--visible.wow(data-wow-delay="0.9s")
-            a.list-section__back(href="#") 
+          aside.list-section__aside.list-section__aside--visible
+            a.list-section__back(href="list.html").wow(data-wow-delay="1s") 
               span Назад к проектам
             a.breadcrumbs__link(href="#") Проекты
             a.breadcrumbs__link(href="#") ID 23-11JQ
             img.list-section__img(src="img/list-item1.jpg")
-            h3.list-section__aside-title.list-section__aside-title--main Частный дом в поселке Знаменское поле
-            h3.list-section__aside-title Площать
-            p.list-section__aside-descr 1 200 кв.м
-            h3.list-section__aside-title Период строительства
-            p.list-section__aside-descr 2016-2017
-            h3.list-section__aside-title Стиль
-            p.list-section__aside-descr Модерн
-            h3.list-section__aside-title Кол-во спален
-            p.list-section__aside-descr 5
-            h3.list-section__aside-title Бассейн
-            p.list-section__aside-descr 30 кв.м
-            h3.list-section__aside-title Гараж
-            p.list-section__aside-descr 4 машины
+            .wow(data-wow-delay=".1s") 
+              h3.list-section__aside-title.list-section__aside-title--main Частный дом в поселке Знаменское поле
+            .wow(data-wow-delay=".2s") 
+              h3.list-section__aside-title Площать
+              p.list-section__aside-descr 1 200 кв.м
+            .wow(data-wow-delay=".3s") 
+              h3.list-section__aside-title Период строительства
+              p.list-section__aside-descr 2016-2017
+            .wow(data-wow-delay=".4s") 
+              h3.list-section__aside-title Стиль
+              p.list-section__aside-descr Модерн
+            .wow(data-wow-delay=".4s") 
+              h3.list-section__aside-title Кол-во спален
+              p.list-section__aside-descr 5
+            .wow(data-wow-delay=".4s") 
+              h3.list-section__aside-title Бассейн
+              p.list-section__aside-descr 30 кв.м
+            .wow(data-wow-delay=".4s") 
+              h3.list-section__aside-title Гараж
+              p.list-section__aside-descr 4 машины
           .list-section__main
-            img.list-section__img.wow(data-wow-delay="0.9s" src="img/list-item1.jpg")
-            img.list-section__img.wow(data-wow-delay="0.9s" src="img/list-item2.jpg")
-            img.list-section__img.wow(data-wow-delay="0.7s" src="img/list-item1.jpg")
-            img.list-section__img.wow(data-wow-delay="0.7s" src="img/list-item2.jpg")
-            h2.common-subtitle.wow(data-wow-delay="0.7s") СЮДА МОЖЕТ ВСТРАИВАТЬСЯ ТЕКСТ
-            p.common-text.wow(data-wow-delay="0.7s") Данный подход позволяет нам четко контролировать все этапы реализации проекта и гарантировать максимально качественный конечный результат. Это дает возможность взаимодействовать с одной компанией на протяжении всего периода строительства дома, а значит экономить свое время и силы и быть уверенными в успехе проекта.
+            img.list-section__img.wow(data-wow-delay="0.1s" src="img/list-item1.jpg")
+            img.list-section__img.wow(data-wow-delay="0.1s" src="img/list-item2.jpg")
+            img.list-section__img.wow(data-wow-delay="0.1s" src="img/list-item1.jpg")
+            img.list-section__img.wow(data-wow-delay="0.1s" src="img/list-item2.jpg")
+            h2.common-subtitle.wow(data-wow-delay="0.1s") СЮДА МОЖЕТ ВСТРАИВАТЬСЯ ТЕКСТ
+            p.common-text.wow(data-wow-delay="0.1s") Данный подход позволяет нам четко контролировать все этапы реализации проекта и гарантировать максимально качественный конечный результат. Это дает возможность взаимодействовать с одной компанией на протяжении всего периода строительства дома, а значит экономить свое время и силы и быть уверенными в успехе проекта.

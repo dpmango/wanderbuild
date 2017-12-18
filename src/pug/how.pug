@@ -6,25 +6,28 @@ block content
   main.page-main
     .container--breadcrumbs
       .breadcrumbs
-        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link(href="homepage.html") Главная
         a.breadcrumbs__link(href="#") Контакты
-    section.contacts.how-section.wow.fadeIn(data-wow-delay="0.7s")
+    // HOW :: START
+    section.contacts.how-section.wow
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
           .contacts__main
-            span.about__link.wow(data-wow-delay="0.9s" href="#") Что мы делаем?
-            h1.contacts__title.common-title.wow(data-wow-delay="0.9s") Идея Wanderbuild
-            p.contacts__descr.common-text.wow(data-wow-delay="0.9s") Идея WB основана на многолетнем знании рынка элитной недвижимости, понимании ее ликвидности, архитектурных и стилистических особенностей, понимания важности выбора правильного места, поселка для будущего строительства. Мы одинаково хорошо учтем как предпочтения хозяина будущего жилища, так и стандарты рынка загородной недвижимости, которые сделают ваш объект ликвидным, и в то же время уникальный.
-            a.common-btn.wow(data-wow-delay="0.9s" href="#") Подробнее
+            span.about__link.wow(data-wow-delay="0.1s" href="#") Что мы делаем?
+            h1.contacts__title.common-title.wow(data-wow-delay="0.2s") Идея Wanderbuild
+            p.contacts__descr.common-text.wow(data-wow-delay="0.3s") Идея WB основана на многолетнем знании рынка элитной недвижимости, понимании ее ликвидности, архитектурных и стилистических особенностей, понимания важности выбора правильного места, поселка для будущего строительства. Мы одинаково хорошо учтем как предпочтения хозяина будущего жилища, так и стандарты рынка загородной недвижимости, которые сделают ваш объект ликвидным, и в то же время уникальный.
+            a.common-btn.wow(data-wow-delay="0.4s" href="about.html") Подробнее
+    // services
     .how-section__services
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
           .contacts__main
-            h1.contacts__title.common-title.wow(data-wow-delay="0.9s") Услуги и компетенции
-            p.contacts__descr.common-text.wow(data-wow-delay="0.9s") Широта наших компетенций позволяет вам  взаимодействовать с одной компанией на протяжении всего периода строительства дома, а значит экономить свое время и силы и быть уверенными в успехе проекта.
-    .about__advantages.how-section__advantages.wow(data-wow-delay="0.7s")
+            h1.contacts__title.common-title.wow(data-wow-delay="0.1s") Услуги и компетенции
+            p.contacts__descr.common-text.wow(data-wow-delay="0.2s") Широта наших компетенций позволяет вам  взаимодействовать с одной компанией на протяжении всего периода строительства дома, а значит экономить свое время и силы и быть уверенными в успехе проекта.
+    // advantages
+    .about__advantages.how-section__advantages.wow(data-wow-delay="0.3s")
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
@@ -39,14 +42,16 @@ block content
               p.about__advantages-text Многолетний опыт проектировки помогает нам создавать качественные проекты, учитывающие все современные требования к строительству
               h2.about__advantages-title 4. Полная комплектация
               p.about__advantages-text Закупка доставка и установка предметов интерьера. Подготовка дома к заселению
+    //steps
     .how-section__steps
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
           .contacts__main
-            h2.common-subtitle.wow(data-wow-delay="0.7s") Этапность работ
-            p.about__team-text.common-text.wow(data-wow-delay="0.7s") Стандартный проект «под ключ» в нашей компании можно разделить на несколько этапов. Поэтапный подход помогает контролировать все шаги реализации проекта и гарантировать максимально качественный конечный результат.
-    .how-section__sliders.wow(data-wow-delay="0.7s")
+            h2.common-subtitle.wow(data-wow-delay="0.1s") Этапность работ
+            p.about__team-text.common-text.wow(data-wow-delay="0.2s") Стандартный проект «под ключ» в нашей компании можно разделить на несколько этапов. Поэтапный подход помогает контролировать все шаги реализации проекта и гарантировать максимально качественный конечный результат.
+    // slider
+    .how-section__sliders.wow(data-wow-delay="0.3s")
       .how-section__header-slider.flex-wrap
         .how-section__header-item 1 ШАГ <br> НАЧАЛО РАБОТЫ
         .how-section__header-item 2 ШАГ <br> Проектирование
@@ -69,25 +74,25 @@ block content
           .how-section__main-img
             img(src="img/slider1.jpg")
           .how-section__main-text Мы занимаемся проектировкой и создаем архитектурное решение, а после на его основе конструктивное решение и инженерный проект.
-    section.new-projects.wow.fadeIn(data-wow-delay="0.7s")
+    section.new-projects.wow.fadeIn(data-wow-delay="0.1s")
       .container
-        h2.new-projects__title.wow(data-wow-delay="1s") Новые проекты
-        .projects-row.wow(js-projects-slider data-wow-delay="0.9s")
-          a.project-item(href="#")
+        h2.new-projects__title.wow Новые проекты
+        .projects-row(js-projects-slider)
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini1.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
             span.project-item__about 
               span О проекте
-          a.project-item(href="#")
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini2.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
             span.project-item__about 
               span О проекте
-          a.project-item(href="#")
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini3.jpg")
             span.project-item__index ID 25-03

@@ -6,76 +6,79 @@ block content
   main.page-main
     .container--breadcrumbs
       .breadcrumbs
-        a.breadcrumbs__link(href="#") Главная
-        a.breadcrumbs__link(href="#") Контакты
+        a.breadcrumbs__link(href="homepage.html") Главная
+        a.breadcrumbs__link(href="#") О компании
+    // ABOUT :: START
     section.contacts.about
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
           .contacts__main
-            span.about__link.wow(data-wow-delay="0.9s" href="#") Наша история
-            h1.contacts__title.common-title.wow(data-wow-delay="0.9s") Индивидуальные проекты под ключ
-            p.contacts__descr.common-text.wow(data-wow-delay="0.9s") История WB связана с нашей девелоперской деятельностью по строительству домов на территории Рублево-Успенского шоссе, реализовав более 20 проектов в поселках Барвиха «Сады Мейендорф», Жуковка «Ландшафт», Жуковка 21, Раздоры-2, Николина Гора «Коттон Вэй», Горки-2.
-            p.contacts__descr.common-text.wow(data-wow-delay="0.9s") Накопив достаточный опыт и выстроив все бизнес-процессы на собственных проектах, мы решили создать и развивать направление «комплексного подхода» для всех желающих получить качественный, ликвидный объект в правильном месте.
-      .about__advantages.wow(data-wow-delay="1s")
+            span.about__link.wow( href="#") Наша история
+            h1.contacts__title.common-title.wow(data-wow-delay="0.1s") Индивидуальные проекты под ключ
+            p.contacts__descr.common-text.wow(data-wow-delay="0.2s") История WB связана с нашей девелоперской деятельностью по строительству домов на территории Рублево-Успенского шоссе, реализовав более 20 проектов в поселках Барвиха «Сады Мейендорф», Жуковка «Ландшафт», Жуковка 21, Раздоры-2, Николина Гора «Коттон Вэй», Горки-2.
+            p.contacts__descr.common-text.wow(data-wow-delay="0.3s") Накопив достаточный опыт и выстроив все бизнес-процессы на собственных проектах, мы решили создать и развивать направление «комплексного подхода» для всех желающих получить качественный, ликвидный объект в правильном месте.
+      // ADVATAGES :: START
+      .about__advantages.wow
         .container
           .contacts__wrap.flex-wrap
             .contacts__empty
             .contacts__main.flex-wrap
-              .about__advantages-half
+              .about__advantages-half.wow(data-wow-delay="0.2s")
                 h2.about__advantages-title 10 лет
                 p.about__advantages-text Опыт работы на рынке загородной недвижимости
                 h2.about__advantages-title 6 месяцев
                 p.about__advantages-text Средний срок работы по проекту
-              .about__advantages-half
+              .about__advantages-half.wow(data-wow-delay="0.4s")
                 h2.about__advantages-title 100+
                 p.about__advantages-text Более 100 проектов реализовано нашей командой
                 h2.about__advantages-title 100 кв.м
                 p.about__advantages-text Средняя площадь построенного дома
+      // TEAM :: START
       .about__team
         .container
           .contacts__wrap.flex-wrap
             .contacts__empty
             .contacts__main
-              h2.common-subtitle.wow(data-wow-delay="0.7s") Наша команда
-              p.about__team-text.common-text.wow(data-wow-delay="0.7s") Команда WB имеет опыт реализации более 20 качественных проектов, у каждого члена нашей команды достаточно опыта и уровня культуры работы с недвижимостью такого уровня. Основатели WB проживают в домах построенных нашей компанией и являются убежденными ценителями качественной и ликвидной недвижимости.
-          .about__team-wrap.flex-wrap.wow(data-wow-delay="0.7s")
-            .about__team-item
+              h2.common-subtitle.wow(data-wow-delay="0.1s") Наша команда
+              p.about__team-text.common-text.wow(data-wow-delay="0.2s") Команда WB имеет опыт реализации более 20 качественных проектов, у каждого члена нашей команды достаточно опыта и уровня культуры работы с недвижимостью такого уровня. Основатели WB проживают в домах построенных нашей компанией и являются убежденными ценителями качественной и ликвидной недвижимости.
+          .about__team-wrap.flex-wrap
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team1.jpg")
               h3.about__team-name Николай Ткаченко
               p.about__team-pos Руководитель департамента загородной недвижимости
               a.about__team-mail(href="mailto:tkachenko@wanderbilt.ru")
                 span tkachenko@wanderbilt.ru
-            .about__team-item
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team2.jpg")
               h3.about__team-name Михаил Шестов
               p.about__team-pos Агент загородной недвижимости
               a.about__team-mail(href="mailto:tkachenko@wanderbilt.ru")
                 span tkachenko@wanderbilt.ru
-            .about__team-item
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team3.jpg")
               h3.about__team-name Дмитрий Никулин
               p.about__team-pos Агент загородной недвижимости
               a.about__team-mail(href="mailto:tkachenko@wanderbilt.ru")
                 span tkachenko@wanderbilt.ru
-            .about__team-item
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team4.jpg")
               h3.about__team-name Олег Днепровский
               p.about__team-pos Старший агент загородной недвижимости
               a.about__team-mail(href="mailto:tkachenko@wanderbilt.ru")
                 span tkachenko@wanderbilt.ru
-            .about__team-item
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team5.jpg")
               h3.about__team-name Ольга Сухова
               p.about__team-pos Агент загородной недвижимости
               a.about__team-mail(href="mailto:tkachenko@wanderbilt.ru")
                 span tkachenko@wanderbilt.ru
-            .about__team-item
+            .about__team-item.wow
               .about__team-img
                 img(src="img/team6.jpg")
               h3.about__team-name Иван Сергеев

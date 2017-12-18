@@ -43,15 +43,21 @@ $(document).ready(function(){
     submitHandler: function(form) {
     },
     rules: {
+      name: {
+        required: true
+      },
       email: {
         required: true,
         email: true
       }
     },
     messages: {
+      name: {
+        required: "Пожалуйста заполните это поле"
+      },
       email: {
-          required: "This field is required",
-          email: "Email is not valid"
+          required: "Пожалуйста заполните это поле",
+          email: "Неправильный формат email"
       }
     }
   });

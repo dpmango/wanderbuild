@@ -1,10 +1,9 @@
 ---
 title: Homepage
-bodyClass: homepage-body
 ---
 extends shared/_layout
 block content
-  main.page-main
+  main.page-main.homepage-body
     // HOME SLIDER :: START
     section.main-slider
       .main-slider__slide.main-slider__slide--one
@@ -12,33 +11,33 @@ block content
           .main-slider__wrap.flex-wrap
             h3.main-slider__quest.wow(data-wow-delay="0.1s") Что мы делаем?
             h2.main-slider__title.wow(data-wow-delay=".2s") Дома по индивидуальным проектам под ключ
-            a.common-btn.wow(data-wow-delay=".4s" href="#") О компании
+            a.common-btn.wow(data-wow-delay=".4s" href="about.html") О компании
       .main-slider__slide.main-slider__slide--two
         .container
           .main-slider__wrap.flex-wrap
-            h3.main-slider__quest Что мы делаем?
-            h2.main-slider__title Короткое название
-            a.common-btn(href="#") О компании
+            h3.main-slider__quest.wow(data-wow-delay="0.1s") Что мы делаем?
+            h2.main-slider__title.wow(data-wow-delay=".2s") Дома по индивидуальным проектам под ключ
+            a.common-btn.wow(data-wow-delay=".4s" href="about.html") О компании
     // NEW PROJECTS :: START
     section.new-projects
       .container
-        h2.new-projects__title.wow(data-wow-delay="1s") Новые проекты
-        .projects-row.wow(js-projects-slider data-wow-delay="0.9s")
-          a.project-item(href="#")
+        h2.new-projects__title.wow Новые проекты
+        .projects-row.wow(js-projects-slider)
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini1.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
             span.project-item__about 
               span О проекте
-          a.project-item(href="#")
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini2.jpg")
             span.project-item__index ID 25-03
             h3.project-item__name ЧАСТНЫЙ ДОМ В ПОСЕЛКЕ ЗНАМЕНСКОЕ ПОЛЕ
             span.project-item__about 
               span О проекте
-          a.project-item(href="#")
+          a.project-item(href="list-item.html")
             .project-item__img
               img(src="img/item-mini3.jpg")
             span.project-item__index ID 25-03
@@ -46,29 +45,32 @@ block content
             span.project-item__about 
               span О проекте
     // ONE PROJECT :: START
-    section.one-project.wow.fadeIn(data-wow-delay="0.7s")
+    section.one-project.wow
       .container
         .one-project__wrap.flex-wrap
-          span.one-project__index.wow(data-wow-delay="0.7s") ID 25-03
-          h2.one-project__name.wow(data-wow-delay="0.9s") Частный дом в поселке Знаменское поле
-          a.common-btn.wow(data-wow-delay="1.1s" href="#") Все проекты
-    section.why-us.wow(data-wow-delay="0.7s")
+          span.one-project__index.wow(data-wow-delay="0.2s") ID 25-03
+          h2.one-project__name.wow(data-wow-delay="0.3s") Частный дом в поселке Знаменское поле
+          a.common-btn.wow(data-wow-delay="0.4s" href="list.html") Все проекты
+    // WHY US :: START
+    section.why-us.wow
       .container
-        h2.why-us__title Почему Wanderbuild
-        .why-us__item
+        h2.why-us__title.wow(data-wow-delay="0.2s") Почему Wanderbuild
+        .why-us__item.wow(data-wow-delay="0.4s")
           p.why-us__text «Мы одинаково хорошо учтем как предпочтения хозяина будущего жилища, так и стандарты рынка загородной недвижимости, которые сделают ваш объект ликвидным, и в то же время уникальным»
           span.why-us__author ТИМУР ТУКАЕВ, Основатель
-    section.what-we-do
+    // WHAT WE DO :: START
+    section.what-we-do.wow
       .container
-        h2.what-we-do__title.wow(data-wow-delay="0.8s") Что мы делаем?
-        p.what-we-do__text.wow(data-wow-delay="1s") Дом, в котором хочется жить. Недвижимость, в которую хочется вкладываться
-        a.common-btn.common-btn--white(href="#") Как мы работаем
+        h2.what-we-do__title.wow(data-wow-delay="0.2s") Что мы делаем?
+        p.what-we-do__text.wow(data-wow-delay=".4s") Дом, в котором хочется жить. Недвижимость, в которую хочется вкладываться
+        a.common-btn.common-btn--white.wow(href="about.html" data-wow-delay=".5s") Как мы работаем
+    // CALLBACK :: START
     section.callback
-      .container.wow(data-wow-delay="0.7s")
-        h2.callback__title Обратная связь
-        p.callback__text Напишите нам и мы быстро свяжемся с вами!
-        form.callback__form(action="#" js-validate-callbackForm).flex-wrap
-          input(type="text" placeholder="Имя").callback__input
-          input(type="email" placeholder="E-mail").callback__input
+      .container.wow
+        h2.callback__title.wow(data-wow-delay="0.2s") Обратная связь
+        p.callback__text.wow(data-wow-delay="0.4s") Напишите нам и мы быстро свяжемся с вами!
+        form.callback__form(action="#" js-validate-callbackForm data-wow-delay="0.5s").flex-wrap.wow
+          input(type="text" name="name" placeholder="Имя").callback__input
+          input(type="email" name="email" placeholder="E-mail").callback__input
           button.callback__btn(type="submit")
             +icon('ico-slider-left')

@@ -6,22 +6,24 @@ block content
   main.page-main
     .container--breadcrumbs
       .breadcrumbs
-        a.breadcrumbs__link(href="#") Главная
+        a.breadcrumbs__link(href="homepage.html") Главная
         a.breadcrumbs__link(href="#") Контакты
+    // CONTACTS :: START
     section.contacts
       .container
         .contacts__wrap.flex-wrap
           .contacts__empty
           .contacts__main
             a.breadcrumbs__link(href="#") Контакты
-            h1.contacts__title.common-title.wow(data-wow-delay="0.9s") Ждем вас в нашем офисе!
-            p.contacts__descr.common-text.wow(data-wow-delay="0.9s") Мы рады видеть вас у нас в офисе с 11:00 до 20:00 каждый день, в том числе в субботу и воскресенье. Вы можете заранее зарезервировать время визита, что бы сократить ожидание к минимуму.
-            a.contacts__btn.common-btn.wow(data-wow-delay="0.9s" href="#") На карте
-      .contacts__map#contacts-map.wow(data-wow-delay="0.9s" href="#")
+            h1.contacts__title.common-title.wow(data-wow-delay="0.1s") Ждем вас в нашем офисе!
+            p.contacts__descr.common-text.wow(data-wow-delay="0.2s") Мы рады видеть вас у нас в офисе с 11:00 до 20:00 каждый день, в том числе в субботу и воскресенье. Вы можете заранее зарезервировать время визита, что бы сократить ожидание к минимуму.
+            a.contacts__btn.common-btn.wow(href="https://maps.yandex.ru" target="_blank" data-wow-delay="0.3s") На карте
+      .contacts__map#contacts-map.wow(data-wow-delay="0.1s")
+      // contact credentials
       .container
-        .contacts__wrap.flex-wrap.wow(data-wow-delay="0.7s" href="#")
+        .contacts__wrap.flex-wrap.wow(data-wow-delay="0.1s")
           .contacts__empty
-          .contacts__main.flex-wrap.wow(data-wow-delay="0.7s")
+          .contacts__main.flex-wrap.wow
             .contacts__half
               h2.contacts__subtitle Телефон
               a.contacts__link(href="tel:+74951059547") 
