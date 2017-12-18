@@ -3,7 +3,7 @@
   top: 0
   left: 0
   width: 100%
-  background-color: transparent
+  background-color: white
   z-index: 10
   border-bottom: 1px solid $mainColor
   transition: all 0.15s $ease
@@ -12,7 +12,7 @@
   &__main
     width: 400px
     border-right: 1px solid $mainColor
-    padding: 27px 0
+    padding: 26px 0
     position: relative
     padding-right: 30px
     justify-content: space-between
@@ -46,6 +46,18 @@
       &:before,
       &:after
         background-color: white
+  &--white
+    background-color: transparent
+    border-color: white
+    .header__main
+      border-color: white
+    .header__logo
+      color: white
+    .hamburger-inner
+      background-color: white
+      &:before,
+      &:after
+        background-color: white
   &--black
     background-color: black
     border-color: transparent
@@ -58,18 +70,7 @@
       &:before,
       &:after
         background-color: white
-  &--white
-    border-color: white
-    .header__main
-      border-color: white
-    .header__logo
-      color: white
-    .hamburger-inner
-      background-color: white
-      &:before,
-      &:after
-        background-color: white
-
+        
 +r($wide)
   .header__empty
     padding-left: 30px
@@ -89,7 +90,7 @@
       width: 100%
       padding-right: 0
       border: 0
-      padding: 26px 0
+      padding: 13px 0
     &__empty
       width: 0
       padding: 0
