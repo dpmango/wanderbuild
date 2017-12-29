@@ -25,6 +25,11 @@ $(document).ready(function(){
   // support svg
   function legacySupport(){
     svg4everybody();
+    // Viewport units buggyfill
+    window.viewportUnitsBuggyfill.init({
+      refreshDebounceWait: 250,
+      appendToBody: true
+    });
   }
 
   // remove prevent behavior
@@ -70,15 +75,15 @@ $(document).ready(function(){
 
   function blockScroll(lock){
     if ( $('[js-open-menu]').is('.is-active') ){
-      _window.on('scroll, wheel', function(e){
+      _window.on('scroll, wheel, touchmove', function(e){
         e.preventDefault();
       });
     } else {
-      _window.off('scroll, wheel');
+      _window.off('scroll, wheel, touchmove');
     }
 
     if ( lock ){
-      _window.off('scroll, wheel');
+      _window.off('scroll, wheel, touchmove');
     }
   };
 
