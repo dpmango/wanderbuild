@@ -28,9 +28,17 @@ $(document).ready(function(){
   }
 
   // remove prevent behavior
-  _document.on('click', 'a[href="#"]', function(e){
-    e.preventDefault();
-  });
+  _document
+    .on('click', 'a[href="#"]', function(e){
+      e.preventDefault();
+    })
+    .on('click', '[js-scrollto]', function(e){
+      var el = "#" + $(this).attr('href').split('#')[1];
+        $('body, html').animate({
+            scrollTop: $(el).offset().top}, 1000);
+      closeMenu();
+      e.preventDefault();
+    })
 
   // breadcrumbs
   function breadCrubms(){
@@ -69,13 +77,13 @@ $(document).ready(function(){
       _window.off('scroll, wheel');
     }
 
-    if ( !lock ){
+    if ( lock ){
       _window.off('scroll, wheel');
     }
   };
 
   function closeMenu(){
-    blockScroll(false);
+    blockScroll(true);
     $('[js-open-menu]').removeClass('is-active');
     $('.header').removeClass('is-open');
     $('.main-nav').removeClass('is-active');
@@ -221,7 +229,7 @@ $(document).ready(function(){
       slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.how-section__header-slider',
-      dots: false,
+      dots: true,
       arrows: false,
       centerMode: true,
       infinite: false,

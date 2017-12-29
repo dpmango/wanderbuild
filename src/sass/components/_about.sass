@@ -48,15 +48,23 @@
       margin-left: 10px
       margin-right: 10px
       &:hover
-        img
-          transform: scale(1.05)
+        .about__team-img::after
+          opacity: 1
         .about__team-mail
           opacity: 1
           visibility: visible
           transform: translateY(0)
     &-img
+      position: relative
       overflow: hidden
       margin-bottom: 17px
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute 0
+        opacity: 0
+        background: rgba(black, .2)
+        transition: all $transitionSpeed $ease
       img
         display: block
         height: auto

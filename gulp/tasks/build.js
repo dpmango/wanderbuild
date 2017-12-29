@@ -25,7 +25,7 @@ function build(callback) {
     'images',
     'svg-min',
     'copy',
-    'list-pages',
+    // 'list-pages',
     callback
   );
 }

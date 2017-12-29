@@ -4,6 +4,7 @@
   align-items: stretch
   justify-content: space-between
   margin: 0 -10px
+  padding-bottom: 15px
 .project-item
   text-decoration: none
   color: $mainColor
@@ -11,15 +12,24 @@
   width: calc(33.33% - 20px)
   padding-bottom: 15px
   &:hover
-    img
-      transform: scale(1.05)
+    .project-item__img::after
+      opacity: 1
+      // transform: scale(1.05)
     .project-item__about
       transform: translateY(0px)
       opacity: 1
       visibility: visible
   &__img
+    position: relative
     margin-bottom: 24px
     overflow: hidden
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute 0
+      opacity: 0
+      background: rgba(black, .2)
+      transition: all $transitionSpeed $ease
     img
       display: block
       height: auto
@@ -69,13 +79,13 @@
       &:before
         height: 100%
       //background-color: $main2Color
-    
+
 +r($desktop)
   .project-item
     &__name
       font-size: 13px
       line-height: 20px
-    
+
 +r($tablet)
   .projects-row
     padding-bottom: 40px

@@ -24,7 +24,7 @@
     margin-left: 0
     width: 140px
     height: 40px
-    
+
   &__services
     padding-top: 50px
     padding-bottom: 30px
@@ -71,6 +71,38 @@
         bottom: 1px
   &__main-slider
     padding-top: 45px
+    .slick-dots
+      position: absolute
+      bottom: -20px
+      left: 0
+      right: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        position: relative
+        display: inline-block
+        margin: 0
+        margin-right: 12px
+        button
+          display: none
+        &::before
+          display: inline-block
+          content: ' '
+          position: absolute
+          top: 0
+          left: 0
+          border-radius: 50%
+          size: 8px
+          background: rgba(black, .5)
+          transition: all $transitionSpeed $ease
+      .slick-active
+        &::before
+          background: $menuColor
+
   &__main-item
     margin-left: 10px
     margin-right: 10px
@@ -84,7 +116,7 @@
     line-height: 25px
     margin-bottom: 0
     margin-top: 25px
-    
+
 +r($tablet)
   .how-section
     &__sliders
