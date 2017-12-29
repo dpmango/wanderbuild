@@ -534,8 +534,8 @@ $(document).ready(function(){
      }
      var locations = [
        {
-         lat: 55.7384238,
-         lng: 37.2367789
+         lat: 55.735936,
+         lng: 37.246264
        }
      ];
      var markers = locations.map(function (location, i) {
