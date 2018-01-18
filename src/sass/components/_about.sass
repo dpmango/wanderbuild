@@ -33,6 +33,7 @@
       font-size: 16px
       line-height: 25px
       max-width: 240px
+      padding-right: 10px
   &__team
     &-wrap
       margin-top: 55px
@@ -152,6 +153,13 @@
 
 +r($mobile)
   .about
+    &__advantages
+      .contacts__main.flex-wrap
+        flex-direction: column
+      &-half
+        width: 100%
+      &-text
+        padding-right: 0
     &__team
       &-wrap
         margin-left: 0
