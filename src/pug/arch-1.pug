@@ -1,0 +1,49 @@
+---
+title: Архитектор
+---
+extends shared/_layout
+block content
+  main.page-main
+    .container--breadcrumbs
+      .breadcrumbs
+        a.breadcrumbs__link(href="index.html") Главная
+        a.breadcrumbs__link(href="about.html") О компании
+    
+    // ARCH :: START
+    section.arch.about
+      .container
+        .arch__wrap.flex-wrap
+          .arch__empty
+          .arch__main
+            .arch__img-holder.wow
+              img(src='img/archBg-1.jpg' srcset='img/archBg-1@2x.jpg')
+            span.about__link.wow Архитектор
+            h1.arch__title.common-title.wow(data-wow-delay="0.1s") Ирина Ясинская
+            p.arch__descr.common-text.wow(data-wow-delay="0.2s") Ясинская Ирина окончила Московский строительный университет  и Московский архитектурный институт. С 2006 года занимается частной архитектурной практикой. Успешно построены дома по проектам в поселках: Петровское, Петровский парк, Истландия и др.
+            
+    // PROJECTS
+    section.new-projects.new-projects--bg-gray.wow.fadeIn(data-wow-delay="0.1s")
+      .container
+        h2.new-projects__title.wow Новые проекты
+        .projects-row(js-projects-slider)
+          a.project-item.wow(href="item-2.html")
+            .project-item__img
+              img(src="img/item-mini2.jpg" srcset="img/item-mini-shooted1@2x.jpg 2x")
+            span.project-item__index Архитектор Брендон Вичвуд
+            h3.project-item__name Английская классика в поселке Ландшафт
+            span.project-item__about
+              span О проекте
+          a.project-item.wow(href="item-3.html")
+            .project-item__img
+              img(src="img/item-mini3.jpg" srcset="img/item-mini-shooted2@2x.jpg 2x")
+            span.project-item__index Архитектор Брендон Вичвуд
+            h3.project-item__name Классический дом в поселке Ландшафт
+            span.project-item__about
+              span О проекте
+          a.project-item.wow(href="item-4.html")
+            .project-item__img
+              img(src="img/item-mini2.jpg" srcset="img/item-mini-render1@2x.jpg 2x")
+            span.project-item__index Архитектор Ирина Ясинская
+            h3.project-item__name Дом в стиле Ар Деко в поселке малое Сареево
+            span.project-item__about
+              span О проекте
