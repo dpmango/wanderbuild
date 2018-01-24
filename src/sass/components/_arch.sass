@@ -1,0 +1,50 @@
+.arch
+  padding-top: 140px
+  padding-bottom: 75px
+  &__wrap
+    align-items: flex-start
+  &__empty
+    width: 400px
+  &__main
+    width: calc(100% - 400px)
+    padding-left: 60px
+    .breadcrumbs__link
+      display: none
+  &__img-holder
+    margin-bottom: 40px
+    img
+      max-width: 100%
+  &__title
+    margin-bottom: 1em
+  &__descr
+    margin-bottom: 30px
+    max-width: 600px
+
++r($wide)
+  .arch
+    &__main
+      padding-left: 30px
+
++r($desktop)
+  .arch
+    &__empty
+      width: 0
+    &__main
+      padding-left: 0
+      width: 100%
+
++r($tablet)
+  .arch
+    padding-top: 90px
+    padding-bottom: 40px
+    &__main
+      .breadcrumbs__link
+        display: inline-block
+        margin-bottom: 30px
+        font-size: 12px
+        &:after
+          display: none
++r($mobile)
+  .arch
+    &__main.flex-wrap
+      flex-direction: column
